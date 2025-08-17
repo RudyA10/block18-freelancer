@@ -79,10 +79,10 @@ function pageHeading() {
 
 // This component represents an array of freelancers
 function arrayofLancers() {
-  const $tbody = document.createElement("tbody");
-  const $freelancers = freeLancerState.map(singleFreelancer);
-  $tbody.replaceChildren(...$freelancers);
-  return $tbody;
+  const tbody = document.createElement("tbody");
+  const freelancers = freeLancerState.map(singleFreelancer);
+  tbody.replaceChildren(...freelancers);
+  return tbody;
 }
 
 // This component represents the average rate of all freelancers
